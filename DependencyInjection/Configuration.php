@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Cookie;
 
 class Configuration implements ConfigurationInterface
 {
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         $treeBuilder = new TreeBuilder('dneustadt_csrf_cookie');
         $rootNode = $treeBuilder->getRootNode();
